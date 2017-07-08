@@ -1,4 +1,12 @@
 {
+  "keys":{
+    "personality_insights":{
+      "username":"50c08a95-83da-4c9d-b97b-f8c7039f2b4c",
+      "password":"5fBIFxYcmLus"
+    },
+    "google_translate":"AIzaSyBOrs89E0o-rCsD0_5JIgosfO6EFmUVd54",
+    "visual_recognition":"c4c32f96551234ede15fa5240024b0b66883a52d"
+  },
   "movies": {
     "secret_life_of_pet": {
       "name": "The Secret Life of Pets",

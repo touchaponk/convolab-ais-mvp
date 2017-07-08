@@ -61,8 +61,7 @@ function updatePersonalityChart(key, pct, title) {
     $("#chart-" + key).data('easyPieChart').update(pct)
 }
 analyzeProfilePic = function(callback){
-    $.get("https://gateway-a.watsonplatform.net/visual-recognition/api/v3/detect_faces?" +
-        "api_key=c4c32f96551234ede15fa5240024b0b66883a52d&version=2016-05-20&url=graph.facebook.com/"+user.id+"/picture?type=large",
+    $.get("/detect?url=graph.facebook.com/"+user.id+"/picture?type=large",
         function (response) {
             console.log("detect pic res ",response);
             if (response.images && response.images.length > 0 && response.images[0].faces.length > 0) {
