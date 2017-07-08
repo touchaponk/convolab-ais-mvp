@@ -1,0 +1,232 @@
+/* CSS declarations go here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.header-bar {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px #fff;
+}
+
+#backdrop-container {
+    /*background: url(http://www.ais.co.th/moviestore/images/1366x600_NEW-AIS-PLAY_feb17.jpg);*/
+    /*background-size: cover;*/
+    /*min-height: 640px;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.main-container {
+}
+
+#matcher-label {
+    font-size: 22px;
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+#matcher-icon {
+    height: 70px;
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 5px;
+}
+
+.vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
+.top-negative-buffer {
+    margin-top: -150px;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+#social-login {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 7px;
+    border: 0px solid;
+    background-color: rgb(34, 34, 34);
+    padding: 20px 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#social-login > p {
+    margin: 0px 0 11px 0;
+
+}
+
+#fb-login {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border-radius: 3px;
+    border: 0px solid;
+    padding: 10px 10px;
+    background-color: rgb(59, 87, 157);
+    background-image: url("/images/fb.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding-left: 51px;
+    display: block;
+    clear: left;
+    background-position: 6px 4px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#fb-loading {
+    border-radius: 500px;
+    border: 3px solid rgb(98, 130, 155);
+    height: 100px;
+    margin-top: -25px;
+    background: rgb(255, 255, 255);
+    display: none;
+}
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    text-align: center;
+}
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.percent {
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+}
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+.angular {
+    margin-top: 100px;
+}
+.angular .chart {
+    margin-top: 0;
+}
+input {
+    display: block;
+    margin: auto;
+    margin-bottom: 3em;
+}
+/*.btn {*/
+    /*display: block;*/
+    /*width: 200px;*/
+    /*margin: 0 auto;*/
+    /*padding: 10px 20px;*/
+    /*background: #cccccc;*/
+    /*color: #ffffff;*/
+    /*text-transform: uppercase;*/
+    /*cursor: pointer;*/
+    /*font-size: 0.8em;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
+/*.btn:hover {*/
+    /*background: #333333;*/
+    /*color: #ffffff;*/
+/*}*/
+.span6 {
+    float: left;
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    li {
+        font-size: 14.4px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .span6 {
+        float: none;
+        width: 100%;
+    }
+    body {
+        padding-top: 0;
+    }
+    ul {
+        height: auto;
+        position: static;
+    }
+    li {
+        display: block;
+        width: 100%;
+    }
+    li a {
+        white-space: normal;
+    }
+    a.active:after {
+        display: none;
+    }
+}
+#fb-result{
+    /*background: rgba(34,34,34,0.9);*/
+    background:black;
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    overflow-x: scroll;
+    padding:10px 0;
+    display:none;
+}
+#fb-profile>p{
+    margin:0px;
+}
+.fb-personality{
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+    text-align: center;
+    margin-right: 30px;
+}
+.fb-personality>p{
+    font-size:15px;
+    text-align: center;
+    margin:0 0 5px 0;
+}
+#fb-login{
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#pi-container{
+    display: inline-block;
+    overflow-x: scroll;
+    width: 1020px;
+
+}
+#fb-content{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:300px;
+}
+#movie-container{
+     display: none;
+}
+#movie-poster{
+    border-radius: 15px;
+    border: 3px solid rgb(98, 130, 155);
+    height: 330px;
+    margin-top: -25px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 13px #ccdc35;
+}
+#movie-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    width: 20%;
+}
